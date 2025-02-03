@@ -1,0 +1,30 @@
+<%- include('./Layouts/header')%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <h3>singledata</h3>
+    <div class="singledata">
+        <div class="singleDataImg">
+            <img src="<%= singledata.image %>"/>
+        </div>
+        <div class="singleDataContent">
+            <h2><%=singledata.moviename%></h2>
+                    <h5 class="rating">Rating ⭐ :- <%=singledata.rating%>/5</h5>
+                    <h5 class="vision"><%=singledata.vision%></h5>
+                    <h5 class="language"><%=singledata.language %></h5>
+                    <h5><%=singledata.date %></h5>
+                    <h5><%=singledata.time %></h5>
+        </div>
+    </div>
+</body>
+</html>
